@@ -16,12 +16,25 @@
 #
 #   puts negative(2)
 
-def is_even(my_number)
-  if my_number % 2 == 0
-    return true
-  else
+# def is_even(my_number)
+#   if(my_number % 2) == 0
+#     return true
+#   else
+#     return false
+#   end
+# end
+#
+# puts is_even(2)
+
+def method(my_string)
+  my_string_size = my_string.chomp.size
+
+  if(my_string_size < 8)
     return false
+  else
+    return true;
   end
+
 end
 
-is_even(2)
+puts method("Molly")
