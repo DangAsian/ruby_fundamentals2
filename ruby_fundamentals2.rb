@@ -5,13 +5,23 @@
 #
 # puts double(4)
 
-def negative(my_number)
+# def negative(my_number)
+#
+#   if my_number >= 0
+#     return false
+#   else my_number < 0
+#     return true
+#   end
+# end
+#
+#   puts negative(2)
 
-  if my_number >= 0
-    return false
-  else my_number < 0
+def is_even(my_number)
+  if my_number % 2 == 0
     return true
+  else
+    return false
   end
 end
 
-  puts negative(2)
+is_even(2)
