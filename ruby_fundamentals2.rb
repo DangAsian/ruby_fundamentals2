@@ -26,15 +26,33 @@
 #
 # puts is_even(2)
 
-def method(my_string)
-  my_string_size = my_string.chomp.size
+# def method(my_string)
+#   my_string_size = my_string.chomp.size
+#
+#   if(my_string_size < 8)
+#     return false
+#   else
+#     return true;
+#   end
+#
+# end
+#
+# puts method("Mollllllllllly")
 
-  if(my_string_size < 8)
-    return false
-  else
-    return true;
-  end
+# def wrap_text(line_1, line_2)
+#   line = ""
+#   line += line_2
+#   line += line_1
+#   line += line_2
+#   return line
+# end
+#
+# puts wrap_text('hello', '===')
 
+
+def plus_one(num_2)
+  num_2 = 20
+  return num_2 + 1
 end
 
-puts method("Molly")
+puts plus_one(30)
