@@ -39,20 +39,26 @@
 #
 # puts method("Mollllllllllly")
 
-# def wrap_text(line_1, line_2)
-#   line = ""
-#   line += line_2
-#   line += line_1
-#   line += line_2
-#   return line
-# end
-#
-# puts wrap_text('hello', '===')
 
-
-def plus_one(num_2)
-  num_2 = 20
-  return num_2 + 1
+def greet_backwards(your_name)
+  puts "Hello #{your_name.reverse! * 2}"
 end
 
-puts plus_one(30)
+greet_backwards("Bob")
+greet_backwards("Shirly")
+greet_backwards("Sue")
+greet_backwards("Andy")
+
+
+def greet_backwards(your_name, your_name1, your_name2, your_name3)
+  names = ""
+  names += your_name
+  names += your_name1
+  names += your_name2
+  names += your_name3
+  return names
+end
+
+
+  something_weird = greet_backwards("Daniel\n", "Molly\n", "Albert\n", "Bao\n")
+  puts(something_weird.reverse! * 2)
